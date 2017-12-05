@@ -2,7 +2,13 @@
 
 function myMap(arr, callback) {
 
-//  CODE INSIDE HERE   //
+	//  CODE INSIDE HERE   //
+	let modArray = [];
+	for (let i = 0; i<arr.length; i++) {
+		modArray.push(callback(arr[i], i, arr));
+			
+	}
+	return modArray;		
 
 }
 
