@@ -4,9 +4,14 @@
 function myReduce(arr, callback) {
 
 //  CODE INSIDE HERE   //
+	let modReduce = [];
+	for (let i = 0; i<arr.length; i++) {
+		modReduce.push(callback(arr[i], i, arr));
+			
+	}
+	return modReduce;		
 
 }
-
 /*
  Best if you don't code out here.
  If you want to check your code, use `index.js`!
